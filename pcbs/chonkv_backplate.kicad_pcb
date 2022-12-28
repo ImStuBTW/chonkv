@@ -1,0 +1,3581 @@
+
+            
+(kicad_pcb (version 20171130) (host pcbnew 5.1.6)
+
+  (page A3)
+  (title_block
+    (title chonkv_backplate)
+    (rev v1.0.0)
+    (company Unknown)
+  )
+
+  (general
+    (thickness 1.6)
+  )
+
+  (layers
+    (0 F.Cu signal)
+    (31 B.Cu signal)
+    (32 B.Adhes user)
+    (33 F.Adhes user)
+    (34 B.Paste user)
+    (35 F.Paste user)
+    (36 B.SilkS user)
+    (37 F.SilkS user)
+    (38 B.Mask user)
+    (39 F.Mask user)
+    (40 Dwgs.User user)
+    (41 Cmts.User user)
+    (42 Eco1.User user)
+    (43 Eco2.User user)
+    (44 Edge.Cuts user)
+    (45 Margin user)
+    (46 B.CrtYd user)
+    (47 F.CrtYd user)
+    (48 B.Fab user)
+    (49 F.Fab user)
+  )
+
+  (setup
+    (last_trace_width 0.25)
+    (trace_clearance 0.2)
+    (zone_clearance 0.508)
+    (zone_45_only no)
+    (trace_min 0.2)
+    (via_size 0.8)
+    (via_drill 0.4)
+    (via_min_size 0.4)
+    (via_min_drill 0.3)
+    (uvia_size 0.3)
+    (uvia_drill 0.1)
+    (uvias_allowed no)
+    (uvia_min_size 0.2)
+    (uvia_min_drill 0.1)
+    (edge_width 0.05)
+    (segment_width 0.2)
+    (pcb_text_width 0.3)
+    (pcb_text_size 1.5 1.5)
+    (mod_edge_width 0.12)
+    (mod_text_size 1 1)
+    (mod_text_width 0.15)
+    (pad_size 1.524 1.524)
+    (pad_drill 0.762)
+    (pad_to_mask_clearance 0.05)
+    (aux_axis_origin 0 0)
+    (visible_elements FFFFFF7F)
+    (pcbplotparams
+      (layerselection 0x010fc_ffffffff)
+      (usegerberextensions false)
+      (usegerberattributes true)
+      (usegerberadvancedattributes true)
+      (creategerberjobfile true)
+      (excludeedgelayer true)
+      (linewidth 0.100000)
+      (plotframeref false)
+      (viasonmask false)
+      (mode 1)
+      (useauxorigin false)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (psnegative false)
+      (psa4output false)
+      (plotreference true)
+      (plotvalue true)
+      (plotinvisibletext false)
+      (padsonsilk false)
+      (subtractmaskfromsilk false)
+      (outputformat 1)
+      (mirror false)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory ""))
+  )
+
+            (net 0 "")
+(net 1 "RAW")
+(net 2 "GND")
+(net 3 "RST")
+(net 4 "VCC")
+(net 5 "P21")
+(net 6 "P20")
+(net 7 "P19")
+(net 8 "P18")
+(net 9 "P15")
+(net 10 "P14")
+(net 11 "P16")
+(net 12 "P10")
+(net 13 "P1")
+(net 14 "P0")
+(net 15 "P2")
+(net 16 "P3")
+(net 17 "P4")
+(net 18 "P5")
+(net 19 "P6")
+(net 20 "P7")
+(net 21 "P8")
+(net 22 "P9")
+(net 23 "BAT_POS")
+            
+  (net_class Default "This is the default net class."
+    (clearance 0.2)
+    (trace_width 0.25)
+    (via_dia 0.8)
+    (via_drill 0.4)
+    (uvia_dia 0.3)
+    (uvia_drill 0.1)
+    (add_net "")
+(add_net "RAW")
+(add_net "GND")
+(add_net "RST")
+(add_net "VCC")
+(add_net "P21")
+(add_net "P20")
+(add_net "P19")
+(add_net "P18")
+(add_net "P15")
+(add_net "P14")
+(add_net "P16")
+(add_net "P10")
+(add_net "P1")
+(add_net "P0")
+(add_net "P2")
+(add_net "P3")
+(add_net "P4")
+(add_net "P5")
+(add_net "P6")
+(add_net "P7")
+(add_net "P8")
+(add_net "P9")
+(add_net "BAT_POS")
+  )
+
+            
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 111.9227706 91.0290801 -4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 116.52344240000001 96.91434290000001 86)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 113.1086307 74.0704912 -4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 117.7093025 79.95575400000001 86)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 114.2944907 57.1119024 -4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 118.8951625 62.9971652 86)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 115.4803508 40.1533135 -4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 120.0810226 46.0385763 86)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 129.8789235 92.2846966 -4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 134.4795953 98.16995940000001 86)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 131.0647836 75.3261077 -4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 135.66545539999998 81.21137049999999 86)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 132.2506436 58.3675189 -4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 136.85131539999998 64.2527817 86)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 133.4365037 41.40893 -4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 138.0371755 47.2941928 86)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 146.1584587 111.06605 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 150.33738830000001 117.25790330000001 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 148.5244014 94.2314928 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 152.703331 100.4233461 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 150.8903441 77.3969357 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 155.0692737 83.588789 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 153.2562868 60.5623785 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 157.4352164 66.7542318 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 155.6222295 43.7278213 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 159.8011591 49.9196746 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 163.9832839 113.5711658 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 168.1622135 119.76301910000001 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 166.3492267 96.7366087 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 170.5281563 102.92846200000001 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 168.7151693 79.9020515 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 172.89409890000002 86.0939048 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 171.0811121 63.0674943 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 175.26004170000002 69.2593476 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 173.4470547 46.2329371 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 177.6259843 52.4247904 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 181.8081091 116.0762817 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 185.9870387 122.268135 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 184.1740519 99.2417245 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 188.3529815 105.43357780000001 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 186.5399946 82.4071672 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 190.7189242 88.59902050000001 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 188.9059373 65.5726101 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 193.0848669 71.76446340000001 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 191.27188 48.7380529 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 195.4508096 54.9299062 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 199.6329344 118.5813975 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 203.811864 124.7732508 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 201.9988771 101.7468403 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 206.1778067 107.93869360000001 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 204.3648198 84.9122831 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 208.5437494 91.1041364 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 206.7307625 68.0777259 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 210.9096921 74.26957920000001 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 209.0967052 51.2431688 -8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 213.2756348 57.4350221 82)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 217.6390069 116.2042239 -98)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 211.4471536 120.3831535 -8)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 345.3552432 91.0290801 4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 350.73021190000003 96.21677820000001 94)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 344.1693831 74.0704912 4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 349.5443518 79.25818930000001 94)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 342.9835231 57.1119024 4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 348.3584918 62.2996005 94)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 341.797663 40.1533135 4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 347.1726317 45.3410116 94)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 327.3990903 92.2846966 4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 332.774059 97.47239470000001 94)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 326.2132302 75.3261077 4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 331.5881989 80.5138058 94)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 325.0273702 58.3675189 4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 330.4023389 63.555217 94)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 323.8415101 41.40893 4)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 329.2164788 46.5966281 94)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 311.11955509999996 111.06605 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 316.8433062 115.8661723 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 308.7536124 94.2314928 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 314.4773635 99.0316151 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 306.3876697 77.3969357 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 312.1114208 82.197058 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 304.021727 60.5623785 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 309.7454781 65.3625008 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 301.6557843 43.7278213 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 307.3795354 48.5279436 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 293.2947299 113.5711658 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 299.018481 118.3712881 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 290.9287871 96.7366087 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 296.65253820000004 101.536731 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 288.5628445 79.9020515 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 294.2865956 84.7021738 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 286.1969017 63.0674943 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 291.9206528 67.8676166 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 283.8309591 46.2329371 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 289.5547102 51.0330594 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 275.46990470000003 116.0762817 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 281.19365580000004 120.876404 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 273.1039619 99.2417245 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 278.827713 104.0418468 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 270.7380192 82.4071672 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 276.4617703 87.2072895 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 268.3720765 65.5726101 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 274.0958276 70.3727324 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 266.0061338 48.7380529 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 271.7298849 53.5381752 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 257.6450794 118.5813975 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 263.3688305 123.38151979999999 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 255.2791367 101.7468403 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 261.0028878 106.5469626 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 252.913194 84.9122831 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 258.6369451 89.7124054 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 250.5472513 68.0777259 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 256.2710024 72.8778482 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 248.1813086 51.2431688 8)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 253.90505969999998 56.0432911 98)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+      (module PG1350 (layer F.Cu) (tedit 5DD50112)
+      (at 239.6390069 116.2042239 98)
+
+      
+      
+        
+      
+      
+
+      
+
+      (fp_line (start -2.25 -8.95) (end 2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 2.25 -8.95) (end 3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.25 -7.95) (end 3.25 -7.35) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 3.75 -7.35) (end 3.25 -7.35) (angle -90) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 3.75 -6.85) (end 7.25 -6.85) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 7.25 -6.85) (end 9.6 -5.75) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 9.6 -5.75) (end 9.6 -1.75) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start 9.6 -1.75) (end 7 0) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_arc (start 5.5 0.0) (end 4 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      
+      (fp_line (start 4 0) (end 2.65 0) (layer Edge.Cuts) (width 0.15))
+      (fp_arc (start 0.25 0.0) (end -2.15 0.0) (angle -180) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -2.15 0) (end -4 0) (layer Edge.Cuts) (width 0.15))
+
+      (fp_arc (start -5.5 0) (end -5.5 -1.5) (angle -270) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -5.5 -1.5) (end -5.5 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -5.5 -7.95) (end -3.25 -7.95) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -3.25 -7.95) (end -2.25 -8.95) (layer Edge.Cuts) (width 0.15))
+
+
+      
+  
+      
+
+      
+      )
+
+            (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
+
+            (at 244.4391292 110.4804728 188)
+
+            (fp_arc (start 1.75 0) (end 1.75 1.25) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 1.75 1.25) (end -1.75 1.25) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -1.75 0) (end -1.75 1.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -1.75 -1.25) (end 1.75 -1.25) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+        
+      (module ProMicro (layer F.Cu) (tedit 5B307E4C)
+      (at 228.6390069 79.0777259 -90)
+
+      (fp_line (start -15.5 9.25) (end 15.5 9.25) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 15.5 9.25) (end 15.5 6) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 15.5 6) (end -15.5 6) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -15.5 6) (end -15.5 9.25) (layer Edge.Cuts) (width 0.15))
+
+      (fp_line (start -15.5 -9.25) (end 15.5 -9.25) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 15.5 -9.25) (end 15.5 -6) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start 15.5 -6) (end -15.5 -6) (layer Edge.Cuts) (width 0.15))
+      (fp_line (start -15.5 -6) (end -15.5 -9.25) (layer Edge.Cuts) (width 0.15))
+      
+        
+        
+      )
+        
+
+        (module lib:OLED_headers (layer F.Cu) (tedit 5E1ADAC2)
+        (at 221.3890069 98.0777259 90) 
+
+        
+
+        
+
+        (fp_arc (start 1.625 2.25) (end 0.25 2.25) (angle 180) (layer Edge.Cuts) (width 0.15))
+        (fp_line (start 3 2.25) (end 3 10) (layer Edge.Cuts) (width 0.15))
+        (fp_arc (start 1.625 10) (end 0.25 10) (angle -180) (layer Edge.Cuts) (width 0.15))
+        (fp_line (start 0.25 2.25) (end 0.25 10) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+        (module kbd:ResetSW (layer F.Cu) (tedit 5B9559E6) (tstamp 61905781)
+            (at 217.6390069 99.0777259 172)
+            
+            (fp_text reference "B1" (at 0 2.55) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+            (fp_text value "" (at 0 -2.55) (layer F.Fab) (effects (font (size 1 1) (thickness 0.15))))
+
+            
+
+            (fp_arc (start 3.25 0) (end 3.25 1.35) (angle -180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start 3.25 1.35) (end -3.25 1.35) (layer Edge.Cuts) (width 0.15))
+            (fp_arc (start -3.25 0) (end -3.25 1.35) (angle 180) (layer Edge.Cuts) (width 0.15))
+            (fp_line (start -3.25 -1.35) (end 3.25 -1.35) (layer Edge.Cuts) (width 0.15))
+        )
+        
+
+    
+    (module JST_PH_S2B-PH-K_02x2.00mm_Angled (layer F.Cu) (tedit 58D3FE32)
+
+        (at 243.1390069 97.5777259 -82)
+
+        
+
+        (fp_arc (start 1.25 0) (end 1.25 1.35) (angle -180) (layer Edge.Cuts) (width 0.15))
+        (fp_line (start 1.25 1.35) (end -1.25 1.35) (layer Edge.Cuts) (width 0.15))
+        (fp_arc (start -1.25 0) (end -1.25 1.35) (angle 180) (layer Edge.Cuts) (width 0.15))
+        (fp_line (start -1.25 -1.35) (end 1.25 -1.35) (layer Edge.Cuts) (width 0.15))
+            
+    )
+    
+    
+
+  (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
+    (tedit 56DDB9C7)
+    (at 124.5700608 46.352480500000006 -4) 
+  
+    (fp_text reference "HOLE1" (at 0 -3.2) (layer "F.SilkS") hide 
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b68bb25c-687d-44b1-b966-dad4cac66b35)
+    )
+  
+    (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b2688462-c375-45d3-9095-3425fb17c88f))
+    (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 2a7fc905-328f-4bbb-9222-ca8d15d03a86))
+    (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (tstamp 47ee1d53-0551-4b6d-bc24-3f3f14c73c36))
+    (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 4eef65bc-4add-40d7-8319-14dcdbae0d44))
+    (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 56155f4d-2ebc-4ad4-8d82-7aa7846deba8))
+    (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 787d6162-1d3c-4def-859e-6532ce27c1ef))
+    (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 8d699d12-7099-4814-bbe6-11bc74c6e8b2))
+    (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 95ab0420-a56b-46ee-98ad-5072a1a93a6f))
+    (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp cde0acf2-b3b4-46de-9f6e-3ab519744000))
+    (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp ff0de415-ae11-46fb-b780-c24aee621212))
+  )
+
+  (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
+    (tedit 56DDB9C7)
+    (at 122.1983407 80.26965820000001 -4) 
+  
+    (fp_text reference "HOLE2" (at 0 -3.2) (layer "F.SilkS") hide 
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b68bb25c-687d-44b1-b966-dad4cac66b35)
+    )
+  
+    (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b2688462-c375-45d3-9095-3425fb17c88f))
+    (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 2a7fc905-328f-4bbb-9222-ca8d15d03a86))
+    (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (tstamp 47ee1d53-0551-4b6d-bc24-3f3f14c73c36))
+    (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 4eef65bc-4add-40d7-8319-14dcdbae0d44))
+    (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 56155f4d-2ebc-4ad4-8d82-7aa7846deba8))
+    (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 787d6162-1d3c-4def-859e-6532ce27c1ef))
+    (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 8d699d12-7099-4814-bbe6-11bc74c6e8b2))
+    (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 95ab0420-a56b-46ee-98ad-5072a1a93a6f))
+    (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp cde0acf2-b3b4-46de-9f6e-3ab519744000))
+    (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp ff0de415-ae11-46fb-b780-c24aee621212))
+  )
+
+  (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
+    (tedit 56DDB9C7)
+    (at 199.9070159 55.5561851 -8) 
+  
+    (fp_text reference "HOLE3" (at 0 -3.2) (layer "F.SilkS") hide 
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b68bb25c-687d-44b1-b966-dad4cac66b35)
+    )
+  
+    (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b2688462-c375-45d3-9095-3425fb17c88f))
+    (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 2a7fc905-328f-4bbb-9222-ca8d15d03a86))
+    (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (tstamp 47ee1d53-0551-4b6d-bc24-3f3f14c73c36))
+    (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 4eef65bc-4add-40d7-8319-14dcdbae0d44))
+    (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 56155f4d-2ebc-4ad4-8d82-7aa7846deba8))
+    (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 787d6162-1d3c-4def-859e-6532ce27c1ef))
+    (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 8d699d12-7099-4814-bbe6-11bc74c6e8b2))
+    (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 95ab0420-a56b-46ee-98ad-5072a1a93a6f))
+    (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp cde0acf2-b3b4-46de-9f6e-3ab519744000))
+    (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp ff0de415-ae11-46fb-b780-c24aee621212))
+  )
+
+  (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
+    (tedit 56DDB9C7)
+    (at 192.8091878 106.0598567 -8) 
+  
+    (fp_text reference "HOLE4" (at 0 -3.2) (layer "F.SilkS") hide 
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b68bb25c-687d-44b1-b966-dad4cac66b35)
+    )
+  
+    (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b2688462-c375-45d3-9095-3425fb17c88f))
+    (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 2a7fc905-328f-4bbb-9222-ca8d15d03a86))
+    (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (tstamp 47ee1d53-0551-4b6d-bc24-3f3f14c73c36))
+    (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 4eef65bc-4add-40d7-8319-14dcdbae0d44))
+    (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 56155f4d-2ebc-4ad4-8d82-7aa7846deba8))
+    (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 787d6162-1d3c-4def-859e-6532ce27c1ef))
+    (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 8d699d12-7099-4814-bbe6-11bc74c6e8b2))
+    (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 95ab0420-a56b-46ee-98ad-5072a1a93a6f))
+    (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp cde0acf2-b3b4-46de-9f6e-3ab519744000))
+    (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp ff0de415-ae11-46fb-b780-c24aee621212))
+  )
+
+  (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
+    (tedit 56DDB9C7)
+    (at 333.705517 46.282724 4) 
+  
+    (fp_text reference "HOLE5" (at 0 -3.2) (layer "F.SilkS") hide 
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b68bb25c-687d-44b1-b966-dad4cac66b35)
+    )
+  
+    (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b2688462-c375-45d3-9095-3425fb17c88f))
+    (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 2a7fc905-328f-4bbb-9222-ca8d15d03a86))
+    (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (tstamp 47ee1d53-0551-4b6d-bc24-3f3f14c73c36))
+    (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 4eef65bc-4add-40d7-8319-14dcdbae0d44))
+    (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 56155f4d-2ebc-4ad4-8d82-7aa7846deba8))
+    (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 787d6162-1d3c-4def-859e-6532ce27c1ef))
+    (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 8d699d12-7099-4814-bbe6-11bc74c6e8b2))
+    (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 95ab0420-a56b-46ee-98ad-5072a1a93a6f))
+    (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp cde0acf2-b3b4-46de-9f6e-3ab519744000))
+    (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp ff0de415-ae11-46fb-b780-c24aee621212))
+  )
+
+  (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
+    (tedit 56DDB9C7)
+    (at 336.0772371 80.1999017 4) 
+  
+    (fp_text reference "HOLE6" (at 0 -3.2) (layer "F.SilkS") hide 
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b68bb25c-687d-44b1-b966-dad4cac66b35)
+    )
+  
+    (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b2688462-c375-45d3-9095-3425fb17c88f))
+    (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 2a7fc905-328f-4bbb-9222-ca8d15d03a86))
+    (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (tstamp 47ee1d53-0551-4b6d-bc24-3f3f14c73c36))
+    (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 4eef65bc-4add-40d7-8319-14dcdbae0d44))
+    (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 56155f4d-2ebc-4ad4-8d82-7aa7846deba8))
+    (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 787d6162-1d3c-4def-859e-6532ce27c1ef))
+    (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 8d699d12-7099-4814-bbe6-11bc74c6e8b2))
+    (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 95ab0420-a56b-46ee-98ad-5072a1a93a6f))
+    (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp cde0acf2-b3b4-46de-9f6e-3ab519744000))
+    (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp ff0de415-ae11-46fb-b780-c24aee621212))
+  )
+
+  (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
+    (tedit 56DDB9C7)
+    (at 258.361266 55.4170121 8) 
+  
+    (fp_text reference "HOLE7" (at 0 -3.2) (layer "F.SilkS") hide 
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b68bb25c-687d-44b1-b966-dad4cac66b35)
+    )
+  
+    (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b2688462-c375-45d3-9095-3425fb17c88f))
+    (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 2a7fc905-328f-4bbb-9222-ca8d15d03a86))
+    (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (tstamp 47ee1d53-0551-4b6d-bc24-3f3f14c73c36))
+    (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 4eef65bc-4add-40d7-8319-14dcdbae0d44))
+    (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 56155f4d-2ebc-4ad4-8d82-7aa7846deba8))
+    (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 787d6162-1d3c-4def-859e-6532ce27c1ef))
+    (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 8d699d12-7099-4814-bbe6-11bc74c6e8b2))
+    (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 95ab0420-a56b-46ee-98ad-5072a1a93a6f))
+    (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp cde0acf2-b3b4-46de-9f6e-3ab519744000))
+    (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp ff0de415-ae11-46fb-b780-c24aee621212))
+  )
+
+  (module "MountingHole_2.2mm_M2_Pad_Via" (version 20210722) (generator pcbnew) (layer "F.Cu")
+    (tedit 56DDB9C7)
+    (at 265.4590941 105.9206836 8) 
+  
+    (fp_text reference "HOLE8" (at 0 -3.2) (layer "F.SilkS") hide 
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp b68bb25c-687d-44b1-b966-dad4cac66b35)
+    )
+  
+    (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp b2688462-c375-45d3-9095-3425fb17c88f))
+    (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 2a7fc905-328f-4bbb-9222-ca8d15d03a86))
+    (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (tstamp 47ee1d53-0551-4b6d-bc24-3f3f14c73c36))
+    (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 4eef65bc-4add-40d7-8319-14dcdbae0d44))
+    (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 56155f4d-2ebc-4ad4-8d82-7aa7846deba8))
+    (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 787d6162-1d3c-4def-859e-6532ce27c1ef))
+    (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 8d699d12-7099-4814-bbe6-11bc74c6e8b2))
+    (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp 95ab0420-a56b-46ee-98ad-5072a1a93a6f))
+    (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp cde0acf2-b3b4-46de-9f6e-3ab519744000))
+    (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (tstamp ff0de415-ae11-46fb-b780-c24aee621212))
+  )
+            (gr_line (start 143.0435897558093 32.104215248371375) (end 148.1351839053701 32.63110919836191) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 314.23442404419075 32.10421524837123) (end 309.1428298946298 32.63110919836163) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 102.74591135087422 100.41179054543775) (end 134.57924425345166 102.63779405152515) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 100.89029624990101 98.27714945935509) (end 103.1225034 66.3550999) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 103.3317729 63.362407700000006) (end 103.1225034 66.3550999) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 103.3317729 63.362407700000006) (end 105.56398005626458 31.44035805247313) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 107.69862114234725 29.58474295149986) (end 142.61336294836408 32.026219554843294) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 136.34944911031573 119.7857592966) (end 228.36066071378238 132.71709170754966) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 136.42026736283384 104.91126833127123) (end 134.64725919459693 117.52687700844501) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 148.5966818915882 32.642169296424996) (end 218.9057147900111 42.52345950098896) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 218.45072165592185 60.13149679461594) (end 220.60790470572988 44.782341789144084) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 237.12510222835937 62.39037908277098) (end 233.46499370474822 62.90477376999496) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 223.8130200952518 62.90477376999496) (end 220.15291157164063 62.39037908277098) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 228.91735308621864 132.71709170754966) (end 320.92856468968426 119.78575929659999) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 322.69876954654825 102.63779405152516) (end 354.53210244699784 100.41179054558656) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 351.7140337458635 31.440358052323973) (end 356.387717547971 98.27714945950447) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 314.66465085163605 32.02621955484328) (end 349.5793926597809 29.58474295135104) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 322.63075460540307 117.5268770084449) (end 320.85774643716604 104.911268331271) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 238.3722990099889 42.52345950098896) (end 308.6813319084117 32.64216929642501) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 236.6701090942701 44.782341789144084) (end 238.8272921440782 60.131496794616396) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 134.4397312608969 104.6329221450531) (end 136.4202673608969 104.9112683450531) (angle -93.99999839438442) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 136.62779529653383 117.8052231946632) (end 134.64725919653384 117.5268769946632) (angle -90.00000000000202) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 228.63900690000048 130.73655560561275) (end 228.3606607000005 132.71709170561275) (angle -15.99999939254377) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 320.6502185034662 117.80522319466309) (end 320.9285647034662 119.78575929466308) (angle -90.00000000000337) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 322.838282539103 104.63292214505282) (end 322.69876953910295 102.63779404505281) (angle -93.99999839438624) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 354.3925894544431 98.41666245205862) (end 354.53210245444313 100.41179055205862) (angle -89.9999999999834) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 349.7189056523356 31.579871044878928) (end 351.7140337523356 31.440358044878927) (angle -89.9999999999919) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 314.8041638441907 34.02134764837123) (end 314.6646508441907 32.02621954837123) (angle -12.551070573729731) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 308.9596780946298 34.62270539836163) (end 309.1428298946298 32.63110919836163) (angle -13.254273643727686) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 238.650645196207 44.503995602925876) (end 238.372298996207 42.523459502925874) (angle -90.00000000000306) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 236.84675604214127 60.409842980834355) (end 237.12510224214125 62.39037908083436) (angle -89.99999999999469) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 220.43125775785876 60.40984298083406) (end 218.45072165785876 60.131496780834055) (angle -89.99999999999963) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 218.62736860379297 44.503995602926125) (end 220.60790470379297 44.782341802926126) (angle -89.99999999999618) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 148.3183357053701 34.622705398361916) (end 148.59668190537008 32.642169298361914) (angle -13.254273643726492) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 142.4738499558093 34.021347648371375) (end 143.0435897558093 32.104215248371375) (angle -12.551070573727486) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 107.55910814979251 31.5798710450278) (end 107.6986211497925 29.584742945027802) (angle -90.00000000000199) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 102.88542434342895 98.41666245190981) (end 100.89029624342895 98.27714945190982) (angle -89.99999999999997) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 224.0385082 67.0767572) (end 223.8130200952518 62.904773769995245) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 233.46499370474822 62.90477376999479) (end 233.2395056 67.0767572) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 233.2395056 67.0767572) (end 224.0385082 67.0767572) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 231.1390069 126.0813975) (end 228.6390069 128.58139749999998) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 228.6390069 128.58139749999998) (end 226.1390069 126.0813975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 226.1390069 126.0813975) (end 227.3890069 123.5813975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 227.3890069 123.5813975) (end 228.6390069 124.8313975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 228.6390069 124.8313975) (end 229.8890069 123.5813975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 229.8890069 123.5813975) (end 231.1390069 126.0813975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 229.6390069 127.5813975) (end 228.6390069 128.58139749999998) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 228.6390069 128.58139749999998) (end 227.6390069 127.5813975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 227.6390069 127.5813975) (end 229.6390069 127.5813975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 227.1390069 126.0813975) (end 227.1390069 125.3313975) (angle 90) (layer F.Mask) (width 0.15))
+(gr_line (start 227.1390069 125.3313975) (end 228.3890069 125.3313975) (angle 90) (layer F.Mask) (width 0.15))
+(gr_line (start 228.3890069 125.3313975) (end 228.3890069 126.0813975) (angle 90) (layer F.Mask) (width 0.15))
+(gr_line (start 228.3890069 126.0813975) (end 227.1390069 126.0813975) (angle 90) (layer F.Mask) (width 0.15))
+(gr_line (start 230.1390069 126.0813975) (end 230.1390069 125.3313975) (angle 90) (layer F.Mask) (width 0.15))
+(gr_line (start 230.1390069 125.3313975) (end 228.8890069 125.3313975) (angle 90) (layer F.Mask) (width 0.15))
+(gr_line (start 228.8890069 125.3313975) (end 228.8890069 126.0813975) (angle 90) (layer F.Mask) (width 0.15))
+(gr_line (start 228.8890069 126.0813975) (end 230.1390069 126.0813975) (angle 90) (layer F.Mask) (width 0.15))
+(gr_line (start 228.3890069 125.8313975) (end 228.3890069 125.5813975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 228.3890069 125.5813975) (end 228.8890069 125.5813975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 228.8890069 125.5813975) (end 228.8890069 125.8313975) (angle 90) (layer F.SilkS) (width 0.15))
+(gr_line (start 228.8890069 125.8313975) (end 228.3890069 125.8313975) (angle 90) (layer F.SilkS) (width 0.15))
+            
+)
+
+        

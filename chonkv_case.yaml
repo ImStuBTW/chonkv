@@ -1,0 +1,302 @@
+# This keyboard comes with config files for two different case options.
+# This is the config file for a traditional 3D printed case.
+
+# This second config file is mostly used to keep the main file uncluttered.
+# Ergogen also makes it less than straight forward to have two different "glue" definitions.
+
+# This file outputs a .stl file that is several mm larger than the main PCB.
+# One side effect of using multiple config files is that Erogen can't combine the case pieces.
+# You should be able to assemble them easily in something like TinkerCAD however.
+
+# The rest of the key definitions has been stripped down significantly.
+
+units:
+  # Aliasing the standard Choc sizes makes board-wide adjustments easier if need be.
+  kx: cx
+  ky: cy
+  # Updated boarder padding. Creates a 2.5mm border.
+  px: 8
+  py: 8
+  # Set Choc spacing for ergogen.cache.works previews.
+  visual_x: kx - 0.5
+  visual_y: ky - 0.5
+  # Standoff Radius Definitions
+  standoff_size: 5
+  insert_size: 3
+points:
+  # Minimal key definition
+  key:  
+    footprints:
+      choc_hotswap:
+        type: choc
+  # Minimal zone definition
+  zones:
+    matrix:
+      anchor.shift: [100, -100]
+      key.padding: 1ky
+      columns:
+        outer:
+          spread: 1kx
+          rows.mod.skip: true
+        pinky:
+          spread: 1kx
+          rows.mod.skip: true
+        ring:
+          spread: 0.975kx
+          rotate: -4
+          stagger: -0.6
+        middle:
+          spread: 1kx
+        index:
+          spread: 1kx
+        inner:
+          spread: 1kx
+        thumb:
+          spread: 1ky
+          row_overrides:
+            mod:
+              rotate: -90
+              shift: [0.5, 0.27kx]
+              width: 1.5
+      rows:
+        mod:
+        bottom:
+        home:
+        top:
+        num:
+  rotate: -4
+  mirror:
+    ref: matrix_thumb_mod
+    distance: 22
+outlines:
+  # Use "Glue" to combine two haves together.
+  # Ergogen files can only use one glue. This one leverages the updated padding.
+  # Hence the two config files.
+  # Uses the same Top Left and Top Right values so that there's a opening for the Microcontroller and switch.
+  glue:
+    glue:
+      top:
+        left:
+          # Top of the "T" key.
+          ref: matrix_inner_top
+          shift: [0, 0.5ky-1]
+        right:
+          # Top of the "Y" key
+          ref: mirror_matrix_inner_top
+          shift: [0, 0.5ky-1]
+      bottom:
+        left:
+          # Bottom of the left thumb.
+          ref: matrix_inner_mod
+          shift: [0, -0.5ky-0.5py]
+        right:
+          # Bottom of the right thumb
+          ref: mirror_matrix_inner_mod
+          shift: [0, -0.5ky-0.5py]
+  exports:
+    # Shape for keyswitches.
+    switches:
+      - type: keys
+        side: both
+        size: [kx-0.5, ky-0.5]
+    # Keyswitches with padding.
+    raw:
+      - type: keys
+        side: both
+        size: [kx+px, ky+py]
+    # Smoothed out panel.
+    panel:
+      - name: raw
+        fillet: 2
+    # Standoff definitions. One underneath each PC screw hole.
+    _standoff_outer_top_left:
+      - type: circle
+        radius: standoff_size
+        anchor:
+          ref: matrix_outer_num
+          shift: [9.5, -5.55]
+    _standoff_outer_bottom_left:
+      - type: circle
+        radius: standoff_size
+        anchor:
+          ref: matrix_outer_home
+          shift: [9.5, -5.55]
+    _standoff_inner_top_left:
+      - type: circle
+        radius: standoff_size
+        anchor:
+          ref: matrix_index_num
+          shift: [9.5, -5.55]
+    _standoff_inner_bottom_left:
+      - type: circle
+        radius: standoff_size
+        anchor:
+          ref: matrix_index_bottom
+          shift: [9.5, -5.55]
+    _standoff_outer_top_right:
+      - type: circle
+        radius: standoff_size
+        anchor:
+          ref: mirror_matrix_pinky_num
+          shift: [-9.5, -5.55]
+    _standoff_outer_bottom_right:
+      - type: circle
+        radius: standoff_size
+        anchor:
+          ref: mirror_matrix_pinky_home
+          shift: [-9.5, -5.55]
+    _standoff_inner_top_right:
+      - type: circle
+        radius: standoff_size
+        anchor:
+          ref: mirror_matrix_inner_num
+          shift: [-9.5, -5.55]
+    _standoff_inner_bottom_right:
+      - type: circle
+        radius: standoff_size
+        anchor:
+          ref: mirror_matrix_inner_bottom
+          shift: [-9.5, -5.55]
+    # I'm going to hav egg on my face if there's an easier way to combine multiple outlines.
+    _standoff_outer_left:
+      - name: _standoff_outer_top_left
+      - operation: add
+        name: _standoff_outer_bottom_left
+    _standoff_inner_left:
+      - name: _standoff_inner_top_left
+      - operation: add
+        name: _standoff_inner_bottom_left
+    _standoff_outer_right:
+      - name: _standoff_outer_top_right
+      - operation: add
+        name: _standoff_outer_bottom_right
+    _standoff_inner_right:
+      - name: _standoff_inner_top_right
+      - operation: add
+        name: _standoff_inner_bottom_right
+    _standoff_left:
+      - name: _standoff_outer_left
+      - operation: add
+        name: _standoff_inner_left
+    _standoff_right:
+      - name: _standoff_outer_right
+      - operation: add
+        name: _standoff_inner_right
+    # Combined standoff definition.
+    standoff_group:
+      - name: _standoff_left
+      - operation: add
+        name: _standoff_right
+    # Definition for 3x3 brass insert for M2 screw holes.
+    _insert_outer_top_left:
+      - type: circle
+        radius: insert_size
+        anchor: 
+          ref: matrix_outer_num
+          shift: [9.5, -5.55]
+    _insert_outer_bottom_left:
+      - type: circle
+        radius: insert_size
+        anchor:
+          ref: matrix_outer_home
+          shift: [9.5, -5.55]
+    _insert_inner_top_left:
+      - type: circle
+        radius: insert_size
+        anchor:
+          ref: matrix_index_num
+          shift: [9.5, -5.55]
+    _insert_inner_bottom_left:
+      - type: circle
+        radius: insert_size
+        anchor:
+          ref: matrix_index_bottom
+          shift: [9.5, -5.55]
+    _insert_outer_top_right:
+      - type: circle
+        radius: insert_size
+        anchor:
+          ref: mirror_matrix_pinky_num
+          shift: [-9.5, -5.55]
+    _insert_outer_bottom_right:
+      - type: circle
+        radius: insert_size
+        anchor:
+          ref: mirror_matrix_pinky_home
+          shift: [-9.5, -5.55]
+    _insert_inner_top_right:
+      - type: circle
+        radius: insert_size
+        anchor:
+          ref: mirror_matrix_inner_num
+          shift: [-9.5, -5.55]
+    _insert_inner_bottom_right:
+      - type: circle
+        radius: insert_size
+        anchor:
+          ref: mirror_matrix_inner_bottom
+          shift: [-9.5, -5.55]
+    # Another combo party.
+    _insert_outer_left:
+      - name: _insert_outer_top_left
+      - operation: add
+        name: _insert_outer_bottom_left
+    _insert_inner_left:
+      - name: _insert_inner_top_left
+      - operation: add
+        name: _insert_inner_bottom_left
+    _insert_outer_right:
+      - name: _insert_outer_top_right
+      - operation: add
+        name: _insert_outer_bottom_right
+    _insert_inner_right:
+      - name: _insert_inner_top_right
+      - operation: add
+        name: _insert_inner_bottom_right
+    _insert_left:
+      - name: _insert_outer_left
+      - operation: add
+        name: _insert_inner_left
+    _insert_right:
+      - name: _insert_outer_right
+      - operation: add
+        name: _insert_inner_right
+    # Combined insert outline.
+    insert_group:
+      - name: _insert_left
+      - operation: add
+        name: _insert_right
+    # Final standoff group with insert area removed from standoff.
+    standoffs:
+      - name: standoff_group
+      - operation: subtract
+        name: insert_group
+    panel_insert_cutout:
+      - name: panel
+      - operation: subtract
+        name: insert_group
+cases:
+  # Panel with additional 2.5mm of area.
+  border_stl:
+    - name: panel
+      operation: add
+      extrude: 1
+  border_insert_stl:
+    - name: panel_insert_cutout
+      operation: add
+      extrude: 1
+  # Standoffs supporting 3mm brass M2 inserts.
+  standoff_only_stl:
+    - name: standoff_group
+      operation: add
+      extrude: 1
+  # Standoffs supporting 3mm brass M2 inserts.
+  insert_only_stl:
+    - name: insert_group
+      operation: add
+      extrude: 1
+  # Standoffs supporting 3mm brass M2 inserts.
+  standoff_stl:
+    - name: standoffs
+      operation: add
+      extrude: 1

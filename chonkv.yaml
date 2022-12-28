@@ -1,0 +1,460 @@
+# Board Overview:
+# This board is inspired by the ChocV keyboard. Instead of 34 keys however, it has 58 keys.
+# It adds a number row, an outer column of keys, and two thumb keys.
+# Two slightly unintuative techniquesarre used in the design of this board.
+
+# This keyboard leverages a "Western" Duplex Matrix https://hackaday.com/tag/duplex-matrix/
+# If this board were built with a standard 5x12 matrix, it would require 17 pins.
+# This would use up too many pins on the Nice!Nano and make it so we couldn't include a screen.
+# By using the "Western Duplex", we "bend" the columns back on themselves and double the rows.
+# This leaves us with a 10x6 matrix. That's 16 pins, and gives is just enough pins to wire up a Nice!View.
+# It's still pretty close however. We have to use a lead to one of the board's internal pins for the CS pin.
+# If you'd like to use an OLED screen, you can skip the flying lead though.
+
+# The extra two thumb switches aren't lined up with any traditional column.
+# The entire mod row is treated as if it's shifted over one to the left.
+# The right thumb switch is wired to B, the mod underneath B is wired to V, the mod under V is connected to C, etc.
+# This is done with a simple column-net reassignment for those keys rather than shifting around the whole board.
+
+units:
+  # Aliasing the standard Choc sizes makes board-wide adjustments easier if need be.
+  kx: cx
+  ky: cy
+  # Border Padding (Was originally set to 2, changed to 3 pretty late on. Explains a few -1mm hacks in the math.)
+  px: 3
+  py: 3
+  # Set Choc spacing for ergogen.cache.works previews.
+  visual_x: kx - 0.5
+  visual_y: ky - 0.5
+  # Icon Sizing & Positioning
+  ix: 5
+  ip: -10
+points:
+  key:  
+    footprints:
+      choc_hotswap:
+        # Board only supports Choc v1 key switches
+        type: choc
+        params:
+          # 'both' footprint variant from Chonkv ergogen fork.
+          # Through-hole legs are essentially uesd as large vias to make routing the rows easier.
+          variant: both
+          keycaps: true
+          reverse: false
+        nets:
+          # Keyboard leverages a "Western" Duplex Matrix
+          # https://hackaday.com/tag/duplex-matrix/
+          # (Not to be confused with a "Japanese" Duplex Matrix)
+          # https://kbd.news/The-Japanese-duplex-matrix-1391.html
+          # Keyboard uses a 6 Column, 10 Row grid.
+          from: =column_net
+          to: =colrow
+      diode:
+        type: diode
+        params:
+          # 'back' footprint variant from Chonkv ergogen fork.
+          # Honestly it's just included to make the board a bit cleaner.
+          variant: back
+        nets:
+          # Standard diode setup.
+          from: =colrow
+          to: =row_net
+        anchor:
+          # Shift down to a common empty spot under hotswap switch.
+          shift: [5, -5.55]
+          rotate: 90
+  zones:
+    matrix:
+      anchor:
+        # Center on KiCad sheet
+        shift: [100, -100]
+      key:
+        # Every key switch is one key height apart from each other.
+        padding: 1ky
+      columns:
+        outer:
+          # Each row has a one key width space between it and its neighbor.
+          spread: 1kx
+          rows:
+            mod:
+              skip: true # Don't need the modifier here.
+          key:
+            column_net: P14
+            # Make sure the mirrored diodes are positioned in the correct spot.
+            mirror.footprints.diode.anchor:
+                shift: [-5, -5.55]
+                rotate: -90
+        pinky:
+          spread: 1kx
+          rows:
+            mod:
+              skip: true # Don't need the modifier here.
+          key:
+            column_net: P16
+            mirror.footprints.diode.anchor:
+                shift: [-5, -5.55]
+                rotate: -90
+        ring:
+          # Rotate, Spread, and Stagger are used to gently curve out the pinky and outer columns in the style of the ChocV.
+          # Remove these options if you want a straight ortholinear-style pad.
+          rotate: -4 # Spread out the pinky and outer rows.
+          spread: 0.975kx # Scoot the ring a bit closer to the middle.
+          stagger: -0.6 # Nudge the ring to be in line with the middle.
+          key:
+            column_net: P10
+            mirror.footprints.diode.anchor:
+                shift: [-5, -5.55]
+                rotate: -90
+          rows:
+            mod:
+              # To make wiring the thumbs easier, all mods nets are re-assigned one column over.
+              column_net: P16 # Ring mod is wired to the pinky column.
+        middle:
+          spread: 1kx
+          key:
+            column_net: P7
+            mirror.footprints.diode.anchor:
+                shift: [-5, -5.55]
+                rotate: -90
+          rows:
+            mod:
+              column_net: P10 # Middle mod is wired to the ring column.
+        index:
+          spread: 1kx
+          key:
+            column_net: P8
+            mirror.footprints.diode.anchor:
+                shift: [-5, -5.55]
+                rotate: -90
+          rows:
+            mod:
+              column_net: P7 # Index mod is wired to the middle column.
+        inner:
+          spread: 1kx
+          key:
+            column_net: P9
+            mirror.footprints.diode.anchor:
+                shift: [-5, -5.55]
+                rotate: -90
+          rows:
+            mod:
+              column_net: P8 # Inner mod is wired to the index column.
+        thumb:
+          spread: 1ky
+          row_overrides:
+            mod:
+              rotate: -90 # Rotate thumb to vertical position.
+              # 0.5mm nudge to account for choc keys rectangular size.
+              # 0.27kx shift to place in line with mod row.
+              shift: [0.5, 0.27kx]
+              width: 1.5 # Thumb keys are 1.5 wide.
+          key:
+            column_net: P9 # Thumb is wired to inner column.
+            mirror.footprints.diode.anchor:
+                shift: [-5, -5.55]
+                rotate: -90
+      rows:
+        # Keyboard leverages a "Western" Duplex Matrix
+        # https://hackaday.com/tag/duplex-matrix/
+        # (Not to be confused with a "Japanese" Duplex Matrix)
+        # https://kbd.news/The-Japanese-duplex-matrix-1391.html
+        # Keyboard uses a 6 Column, 10 Row grid.
+        # Note left and right side each have their own rows.
+        # Columns double back in a "U" shape.
+        mod:
+          row_net: P15
+          mirror.row_net: P6
+        bottom:
+          row_net: P18
+          mirror.row_net: P5
+        home:
+          row_net: P19
+          mirror.row_net: P4
+        top:
+          row_net: P20
+          mirror.row_net: P0
+        num:
+          row_net: P21
+          mirror.row_net: P1
+  # Board has a slight 4 degree rotation to give it a V shape.
+  rotate: -4
+  mirror:
+    # Board is mirrored with just enough room to put the controller inbetween.
+    ref: matrix_thumb_mod
+    distance: 22
+outlines:
+  # Use "Glue" to combine two haves together.
+  glue:
+    glue:
+      top:
+        left:
+          # Top of the "T" key. -1mm is due to a last minute change in the padding.
+          ref: matrix_inner_top
+          shift: [0, 0.5ky-1]
+        right:
+          # Top of the "Y" key. -1mm is due to a last minute change in the padding.
+          ref: mirror_matrix_inner_top
+          shift: [0, 0.5ky-1]
+      bottom:
+        left:
+          # Bottom of the left thumb.
+          ref: matrix_inner_mod
+          shift: [0, -0.5ky-0.5py]
+        right:
+          # Bottom of the right thumb
+          ref: mirror_matrix_inner_mod
+          shift: [0, -0.5ky-0.5py]
+  exports:
+    # Shape for keyswitches. Just used for testing.
+    _switches:
+      - type: keys
+        side: both
+        size: [kx-0.5, ky-0.5]
+    # The main shape of the keyboard. (Keys with the gap inbetween filled in with padding.)    
+    _raw:
+      - type: keys
+        side: both
+        size: [kx+px, ky+py]
+    # There's a gap between the pinky column and the rest of the board. This polygon fills the gap.
+    _left_gap:
+      - type: polygon
+        points:
+          - ref: matrix_pinky_num
+            shift: [0.5kx-0.5px, 0.5ky+0.5py]
+          - ref: matrix_ring_num
+            shift: [-0.5kx+0.5px, 0.5ky+0.5py]
+          - ref: matrix_ring_bottom
+            shift: [-0.5kx+0.5px, 0]
+          - ref: matrix_pinky_bottom
+            shift: [0.5kx-0.5px, 0]
+    # Add a gap for the right too.
+    _right_gap:
+      - type: polygon
+        points:
+          - ref: mirror_matrix_pinky_num
+            shift: [0.5kx-0.5px, 0.5ky+0.5px]
+          - ref: mirror_matrix_ring_num
+            shift: [-0.5kx+0.5px, 0.5ky+0.5px]
+          - ref: mirror_matrix_ring_bottom
+            shift: [-0.5kx+0.5px, 0]
+          - ref: mirror_matrix_pinky_bottom
+            shift: [0.5kx-0.5px, 0]
+    # Combined gap shape.
+    _gaps:
+      - name: _left_gap
+      - operation: add
+        name: _right_gap
+    # Our final board shape. Fillet adds rounding to the corners.
+    panel:
+      - name: _gaps
+      - operation: add
+        name: _raw
+        fillet: 2
+    # Here's a ton of configs for a small amount of pcb art.
+    # Adds a small fox wearing glasses to the space between the thumb keys.
+    # Don't forget to add a coper fill in KiCad to make the glasses shine.
+    _icon_outline:
+      - type: polygon
+        points:
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0ix,0ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.5ix,0.5ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.25ix,1ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0ix,0.75ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.25ix,1ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.5ix,0.5ix+1ip]
+    _icon_nose:
+      - type: polygon
+        points:
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0ix,0ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.2ix,0.2ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.2ix,0.2ix+1ip]
+    _icon_glasses_left:
+      - type: polygon
+        points:
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.3ix,0.65ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.05ix,0.65ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.05ix,0.5ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.3ix,0.5ix+1ip]
+    _icon_glasses_right:
+      - type: polygon
+        points:
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.3ix,0.65ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.05ix,0.65ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.05ix,0.5ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.3ix,0.5ix+1ip]
+    _icon_glasses_center:
+      - type: polygon
+        points:
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.05ix,0.6ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.05ix,0.6ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [0.05ix,0.55ix+1ip]
+          - ref: [matrix_inner_mod, mirror_matrix_inner_mod]
+            shift: [-0.05ix,0.55ix+1ip]
+# Now that we've got our switch definitions and board outlines, time to combine everything to gether into a PCB.
+pcbs:
+  chonkv:
+    # Use our board outline for the PCB.
+    outlines:
+      board:
+        outline: panel
+      icon_outline:
+        outline: _icon_outline
+        layer: F.SilkS
+      icon_nose:
+        outline: _icon_nose
+        layer: F.SilkS
+      icon_glasses_left:
+        outline: _icon_glasses_left
+        layer: F.Mask
+      icon_glasses_right:
+        outline: _icon_glasses_right
+        layer: F.Mask
+      icon_glasses_center:
+        outline: _icon_glasses_center
+        layer: F.SilkS
+    footprints:
+      # Standard Pro Micro footprint. (Face Down) Does not need to be flippable.
+      # Ideally this board would use a Nice!Nano.
+      mcu:
+        type: promicro
+        anchor:
+          ref:
+            - matrix_inner_top
+            - mirror_matrix_inner_top
+          shift: [0, -11]
+          rotate: -90
+      # OLED footprint is offset so that a Nice!View can be used.
+      # The Nice!View's Pin 5 (CS) will need to be hand-soldered due to a lack of free pins.
+      # Note, the OLED header is slightly off-center since it's designed to handle a Nice!View.
+      # You can center it if you're just planning on using standard OLED.
+      screen:
+        type: oled
+        anchor:
+          ref: # Providing two refs places the footprint inbetween the two.
+            - matrix_inner_top
+            - mirror_matrix_inner_top
+          shift: [-7.25, -30]
+          rotate: 90
+        nets:
+          SDA: P2
+          SCL: P3
+          VCC: VCC
+          GND: GND
+      # Standard power switch definition.
+      switch:
+        type: slider
+        params:
+          side: B
+        anchor:
+          ref:
+            - matrix_inner_top
+            - mirror_matrix_inner_top
+          shift: [0, 3]
+        nets:
+          from: RAW
+          to: BAT_POS
+      # Through-hole two pin pushbutton used for RST button.
+      # Using footprint from: 
+      # https://github.com/tarneaux/supersplit/blob/ba3eadcae2446f496cd67b3c8ec7804a96f18b8e/ergogen/src/footprints/button.js
+      reset:
+        type: button
+        params:
+          variant: 2_pin_th
+        nets:
+          from: GND  
+          to: RST
+        anchor:
+          ref: [matrix_inner_top, mirror_matrix_inner_top]
+          shift: [-11, -31]
+          rotate: 172 # Same angle as thumb key.
+      # 2-Pin JST header.
+      # Using footprint from:
+      power:
+        type: jstph
+        nets:
+          pos: BAT_POS
+          neg: GND
+        anchor:
+          ref:
+            - matrix_inner_top
+            - mirror_matrix_inner_top
+          shift: [14.5, -29.5]
+          rotate: -82 # Same angle as thumb key
+      # Add 8 mounting holes for a case or backplate.
+      # Shift values are slightly weird (0.55kx, etc.) due to some alignment issues with the backplane design.
+      # If you're using this keyboard as inspiration for your own design, you can probably get away with 0.5kx, 0.5ky
+      # Using mounting hole from this fork: https://github.com/MvEerd/ergogen/blob/mveerd/src/footprints/mountinghole.js
+      mount_outer_top_left:
+        type: mountinghole
+        anchor:
+          ref:
+            - matrix_outer_num
+          shift: [9.5, -5.55]
+      mount_outer_bottom_left:
+        type: mountinghole
+        anchor:
+          ref:
+            - matrix_outer_home
+          shift: [9.5, -5.55]
+      mount_inner_top_left:
+        type: mountinghole
+        anchor:
+          ref:
+            - matrix_index_num
+          shift: [9.5, -5.55]
+      mount_inner_bottom_left:
+        type: mountinghole
+        anchor:
+          ref:
+            - matrix_index_bottom
+          shift: [9.5, -5.55]
+      mount_outer_top_right:
+        type: mountinghole
+        anchor:
+          ref:
+            - mirror_matrix_pinky_num
+          shift: [9.5, -5.55]
+      mount_outer_bottom_right:
+        type: mountinghole
+        anchor:
+          ref:
+            - mirror_matrix_pinky_home
+          shift: [9.5, -5.55]
+      mount_inner_top_right:
+        type: mountinghole
+        anchor:
+          ref:
+            - mirror_matrix_inner_num
+          shift: [9.5, -5.55]
+      mount_inner_bottom_right:
+        type: mountinghole
+        anchor:
+          ref:
+            - mirror_matrix_inner_bottom
+          shift: [9.5, -5.55]
+# Export the basic outline of the PCB as a .stl file for use in 3D printed designs.
+cases:
+  keyboard_footprint_stl:
+    - name: panel
+      operation: add
+      extrude: 1
