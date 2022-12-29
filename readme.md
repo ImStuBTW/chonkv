@@ -1,5 +1,7 @@
 # ChonkV
 
+![ChonkV PCB Render](PNG-Render.png)
+
 The ChonkV is a 58 key choc keyboard based off Brickbot's excellent [chocV](https://github.com/brickbots/chocV) keyboard. It adds a number row, an additional outer column, and thumb keys in the style of the [Atreus keyboard](https://shop.keyboard.io/products/keyboardio-atreus).
 
 This keyboard was designed largely as a way of learning the [Ergogen](https://docs.ergogen.xyz) keyboard layout generator software. I was pretty happy with my previous keyboard, the split Sofle Choc, but this new keyboard design allowed me to test a variety of concepts I'd been curious about experimenting with. The ChonkV has the same 58 key count as the Sofle Choc, but its unibody design makes it a bit more portable. This board also has true Choc spacing, and is my first time working with the Nice!Nano wireless microcontroller. While it's not a true ortholinear block, this is my first time dabbling with a board that drops the usual column stagger.
