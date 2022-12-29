@@ -1,0 +1,9 @@
+file_format: "1"
+id: chonkv
+name: ChonkV
+type: shield
+url: https://github.com/imstuartjones/chonkv/
+requires: [pro_micro]
+features:
+  - keys
+  - display
