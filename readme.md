@@ -1,6 +1,6 @@
 # ChonkV
 
-![ChonkV PCB Render](https://raw.githubusercontent.com/ImStuartJones/chonkv/main/images/PCB-Render.png)
+![ChonkV](https://raw.githubusercontent.com/ImStuartJones/chonkv/main/images/ChonkV.png)
 
 The ChonkV is a 58 key choc keyboard based off Brickbot's excellent [chocV](https://github.com/brickbots/chocV) keyboard. It adds a number row, an additional outer column, and thumb keys in the style of the [Atreus keyboard](https://shop.keyboard.io/products/keyboardio-atreus).
 
@@ -21,11 +21,11 @@ There's a few existing board designs that also may have checked these boxes. The
 * Physical power switch.
 * Includes designs for a Horizon/ChocV style PCB backplate as well as a more traditional 3D printed case.
 
-## This Is A Work In Progress
-
-I haven't sent this keyboard off for manufacturing just yet! In case you stumbled upon this on Github, take these designs with a grain of salt. Just an FYI, this is using as a reference to learn Ergogen, this library leverages Ergogen 3, and several custom footprints that can be found in [my fork](https://github.com/ImStuartJones/ergogen). Ergogen 4 made several breaking changes to the syntax in December of 2022, so make sure you check which version you're using.
-
 ## Ergogen Files
+
+![ChonkV PCB Render](https://raw.githubusercontent.com/ImStuartJones/chonkv/main/images/PCB-Render.png)
+
+*Just an FYI, this is using as a reference to learn Ergogen, this library leverages Ergogen 3, and several custom footprints that can be found in [my fork](https://github.com/ImStuartJones/ergogen). Ergogen 4 made several breaking changes to the syntax in December of 2022, so make sure you check which version you're using.*
 
 ### chonkv.yaml
 

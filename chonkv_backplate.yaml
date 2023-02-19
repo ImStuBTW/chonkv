@@ -197,9 +197,9 @@ outlines:
           - ref: mirror_matrix_inner_top
             shift: [16, 0.5ky]
           - ref: mirror_matrix_inner_top
-            shift: [17, 0.2ky]
+            shift: [17, 0.05ky]
           - ref: matrix_inner_top
-            shift: [17, 0.2ky]
+            shift: [17, 0.05ky]
     # Shape for keyswitches.
     switches:
       - type: keys

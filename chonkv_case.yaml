@@ -21,8 +21,8 @@ units:
   visual_x: kx - 0.5
   visual_y: ky - 0.5
   # Standoff Radius Definitions
-  standoff_size: 5
-  insert_size: 3
+  standoff_size: 2.5
+  insert_size: 1.5
 points:
   # Minimal key definition
   key:  
