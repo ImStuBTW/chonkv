@@ -2,7 +2,7 @@ file_format: "1"
 id: chonkv
 name: ChonkV
 type: shield
-url: https://github.com/imstuartjones/chonkv/
+url: https://github.com/imstubtw/chonkv/
 requires: [pro_micro]
 features:
   - keys

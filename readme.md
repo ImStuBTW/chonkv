@@ -27,7 +27,7 @@ There's a few existing board designs that also may have checked these boxes. The
 
 ![ChonkV PCB Render](images/PCB-Render.png)
 
-**Just an FYI for those looking to use this as a reference to learn Ergogen. This library leverages Ergogen 3, and several custom footprints that can be found in [my fork repo](https://github.com/ImStuartJones/ergogen). Ergogen 4 made several breaking changes to the syntax in December of 2022, so make sure you check which version you're using if you reference these config files for your own project.**
+**Just an FYI for those looking to use this as a reference to learn Ergogen. This library leverages Ergogen 3, and several custom footprints that can be found in [my fork repo](https://github.com/ImStuBTW/ergogen). Ergogen 4 made several breaking changes to the syntax in December of 2022, so make sure you check which version you're using if you reference these config files for your own project.**
 
 ### chonkv.yaml
 
